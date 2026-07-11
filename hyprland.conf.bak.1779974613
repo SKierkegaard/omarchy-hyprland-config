@@ -1,4 +1,4 @@
-# Learn how to configure Hyprland: https://wiki.hypr.land/Configuring/
+# Learn how to configure Hyprland: https://wiki.hyprland.org/Configuring/
 
 # Use defaults Omarchy defaults (but don't edit these directly!)
 source = ~/.local/share/omarchy/default/hypr/autostart.conf
@@ -13,15 +13,16 @@ source = ~/.local/share/omarchy/default/hypr/windows.conf
 source = ~/.config/omarchy/current/theme/hyprland.conf
 
 # Change your own setup in these files (and overwrite any settings from defaults!)
-source = ~/.config/hypr/my_configs/monitors.conf
-source = ~/.config/hypr/my_configs/input.conf
-source = ~/.config/hypr/my_configs/bindings.conf
-source = ~/.config/hypr/my_configs/looknfeel.conf
-source = ~/.config/hypr/my_configs/workspaces.conf
+source = ~/.config/hypr/monitors.conf
+source = ~/.config/hypr/input.conf
+source = ~/.config/hypr/bindings.conf
+source = ~/.config/hypr/looknfeel.conf
 source = ~/.config/hypr/autostart.conf
+source = ~/.config/hypr/workspace.conf
+
+# Add any other personal Hyprland configuration below
+
+# windowrule = workspace 5, match:class qemu
 
 # Toggle config flags dynamically
 source = ~/.local/state/omarchy/toggles/hypr/*.conf
-
-# Add any other personal Hyprland configuration below
-# windowrule = workspace 5, match:class qemu
