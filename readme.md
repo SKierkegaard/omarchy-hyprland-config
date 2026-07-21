@@ -2,13 +2,6 @@
 
 Minha configuração pessoal do [Hyprland](https://hypr.land/) com layout scrolling e overview de workspaces via plugin para o [Omarchy](https://omarchy.org/).
 
-## Estrutura
-
-hyprland.conf
-cfg/
-|-- bindings.conf # Atalhos de teclado e submaps
-|-- looknfeel.conf # Animações, layout, aparência e plugins
-
 ## Requisitos
 
 - [Hyprland](https://hypr.land/)
