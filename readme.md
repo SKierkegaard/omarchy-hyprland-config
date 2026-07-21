@@ -6,8 +6,8 @@ Minha configuração pessoal do [Hyprland](https://hypr.land/) com layout scroll
 
 hyprland.conf
 cfg/
-├── bindings.conf # Atalhos de teclado e submaps
-└── looknfeel.conf # Animações, layout, aparência e plugins
+|-- bindings.conf # Atalhos de teclado e submaps
+|-- looknfeel.conf # Animações, layout, aparência e plugins
 
 ## Requisitos
 
@@ -38,3 +38,8 @@ cfg/
 ```bash
    hyprctl reload
 ```
+
+## Créditos
+
+- [Hyprland](https://github.com/hyprwm/Hyprland)
+- [scrolloverview](https://github.com/yayuuu/hyprland-scroll-overview) por yayuuu
