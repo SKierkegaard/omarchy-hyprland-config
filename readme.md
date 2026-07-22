@@ -12,12 +12,12 @@ Minha configuração pessoal do [Hyprland](https://hypr.land/) com layout scroll
 
 1. Clone este repositório:
 ```bash
-   git clone https://github.com/SKierkegaard/hyprland-dotfiles.git
+   git clone https://github.com/SKierkegaard/omarchy-hyprland-config
 ```
 
 2. Copie ou linke os arquivos de `cfg/` para `~/.config/hypr/`:
 ```bash
-   ln -s ~/hyprland-dotfiles/cfg/* ~/.config/hypr/
+   ln -s ~/omarchy-hyprland-config/cfg/* ~/.config/hypr/
 ```
 
 3. Instale o plugin `scrolloverview`:
