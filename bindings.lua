@@ -1,6 +1,6 @@
 -- app variables
-local browser = "brave-origin"
-local terminal = "foot"
+local browser = "zen-browser"
+local terminal = "ghostty"
 
 
 -- app bindings
@@ -13,6 +13,8 @@ hl.unbind(appBind .. " + M")
 hl.unbind(appBind .. " + D")
 hl.unbind(appBind .. " + F")
 hl.unbind(appBind .. " + W")
+hl.unbind(appBind .. " + Y")
+hl.unbind(appBind .. " + R")
 
 o.bind(appBind .. " + B", "Open browser", browser)
 o.bind("SUPER + RETURN", "Open terminal", terminal)
@@ -20,6 +22,7 @@ o.bind(appBind .. " + M", "Open Pear Desktop", "pear-desktop")
 o.bind(appBind .. " + D", "Open Discord", "discord-canary")
 o.bind(appBind .. " + F", "Open file manager", "nautilus")
 o.bind(appBind .. " + W", "Open Omawrite", "omawrite")
+o.bind(appBind .. " + R", "Open Foliate", "foliate")
 
 
 -- manage windows
@@ -56,10 +59,6 @@ if hl.plugin and hl.plugin.scrolloverview then
       hl.bind("L", hl.plugin.scrolloverview.navigate("right"))
       hl.bind("J", hl.plugin.scrolloverview.navigate("down"))
       hl.bind("K", hl.plugin.scrolloverview.navigate("up"))
-      hl.bind("RETURN", function ()
-          hl.plugin.scrolloverview.overview("off")
-          hl.dispatch(hl.dsp.submap("reset"))
-      end)
 
       hl.bind("SHIFT + K", hl.dsp.window.move({ workspace = "r-1" }))
       hl.bind("SHIFT + J", hl.dsp.window.move({ workspace = "r+1" }))
@@ -71,10 +70,16 @@ if hl.plugin and hl.plugin.scrolloverview then
       hl.bind(appBind .. " + M", hl.dsp.exec_cmd("pear-desktop"))
       hl.bind(appBind .. " + D", hl.dsp.exec_cmd("discord-canary"))
       hl.bind(appBind .. " + F", hl.dsp.exec_cmd("nautilus"))
+      hl.bind(appBind .. " + R", hl.dsp.exec_cmd("foliate"))
 
       hl.bind("X", hl.dsp.window.close())
 
       hl.bind("ESCAPE", function ()
+          hl.plugin.scrolloverview.overview("off")
+          hl.dispatch(hl.dsp.submap("reset"))
+      end)
+
+      hl.bind("RETURN", function ()
           hl.plugin.scrolloverview.overview("off")
           hl.dispatch(hl.dsp.submap("reset"))
       end)

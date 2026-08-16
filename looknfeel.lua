@@ -1,7 +1,7 @@
 hl.config({
   general = {
-    gaps_in = 3,
-    gaps_out = 3,
+    gaps_in = 4,
+    gaps_out = 6,
     border_size = 2,
 
     layout = "scrolling"
@@ -9,9 +9,8 @@ hl.config({
 
   decoration = {
     rounding = 3,
-    dim_inactive = true,
-    dim_strength = 0.1,
-    active_opacity = 1,
+    active_opacity = 0.97,
+    inactive_opacity = 0.9,
 
     blur = {
       enabled = true,
@@ -25,13 +24,14 @@ hl.config({
   },
 
   scrolling = {
-    fullscreen_on_one_column = false,
-    column_width = 1
+    fullscreen_on_one_column = true,
+    column_width = 1,
+    focus_fit_method = 1
   },
 
   plugin = {
     scrolloverview = {
-      scale = 0.63,
+      scale = 0.6,
       gesture_distance = 300,
       workspace_gap = 27,
       layout = "vertical",
