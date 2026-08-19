@@ -1,19 +1,19 @@
 hl.config({
   general = {
-    gaps_in = 4,
-    gaps_out = 6,
-    border_size = 2,
+    gaps_in = 0,
+    gaps_out = 0,
+    border_size = 0,
 
     layout = "scrolling"
   },
 
   decoration = {
-    rounding = 3,
-    active_opacity = 0.97,
-    inactive_opacity = 0.9,
+    rounding = 0,
+    active_opacity = 1,
+    inactive_opacity = 0.7,
 
     blur = {
-      enabled = true,
+      enabled = false,
       size = 8,
       passes = 2
     },
@@ -26,7 +26,8 @@ hl.config({
   scrolling = {
     fullscreen_on_one_column = true,
     column_width = 1,
-    focus_fit_method = 1
+    focus_fit_method = 0,
+    follow_focus = true
   },
 
   plugin = {
@@ -38,7 +39,7 @@ hl.config({
       wallpaper = 0,
 
       shadow = {
-          enabled = true,
+          enabled = false,
         range = 27
       }
     }
