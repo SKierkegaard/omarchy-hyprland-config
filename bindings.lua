@@ -37,6 +37,7 @@ hl.unbind("SUPER + H")
 hl.unbind("SUPER + L")
 hl.unbind("SUPER + SHIFT + H")
 hl.unbind("SUPER + SHIFT + L")
+hl.unbind(wmBind .. " + Z")
 
 o.bind(wmBind .. " + F", "Toggle fullscreen", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }))
 o.bind(wmBind .. " + X", "Close window", hl.dsp.window.close())
@@ -45,6 +46,7 @@ o.bind("SUPER + H", "Focus left", hl.dsp.focus({direction = "left"}))
 o.bind("SUPER + L", "Focus right", hl.dsp.focus({direction = "right"}))
 o.bind("SUPER + SHIFT + L", "Swap window right", hl.dsp.window.swap({ direction = "right" }))
 o.bind("SUPER + SHIFT + H", "Swap window left", hl.dsp.window.swap({ direction = "left" }))
+o.bind(wmBind .. " + Z", "WTF? hyprctl reload", hl.dsp.exec_cmd("hyprctl reload"))
 
 
 -- scrolloverview subbmap
@@ -71,6 +73,7 @@ if hl.plugin and hl.plugin.scrolloverview then
       hl.bind(appBind .. " + D", hl.dsp.exec_cmd("discord-canary"))
       hl.bind(appBind .. " + F", hl.dsp.exec_cmd("nautilus"))
       hl.bind(appBind .. " + R", hl.dsp.exec_cmd("foliate"))
+      hl.bind(wmBind .. " + Z", hl.dsp.exec_cmd("hyprctl reload"))
 
       hl.bind("X", hl.dsp.window.close())
 
