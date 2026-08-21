@@ -39,8 +39,8 @@ hl.config({
       wallpaper = 0,
 
       shadow = {
-          enabled = false,
-        range = 27
+          enabled = true,
+        range = 10
       }
     }
   }
