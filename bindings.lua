@@ -1,5 +1,5 @@
 -- app variables
-local browser = "zen-browser"
+local browser = "brave-origin"
 local terminal = "ghostty"
 
 
