@@ -15,6 +15,7 @@ hl.unbind(appBind .. " + F")
 hl.unbind(appBind .. " + W")
 hl.unbind(appBind .. " + Y")
 hl.unbind(appBind .. " + R")
+hl.unbind(appBind .. " + I")
 
 o.bind(appBind .. " + B", "Open browser", browser)
 o.bind("SUPER + RETURN", "Open terminal", terminal)
@@ -23,6 +24,7 @@ o.bind(appBind .. " + D", "Open Discord", "discord-canary")
 o.bind(appBind .. " + F", "Open file manager", "nautilus")
 o.bind(appBind .. " + W", "Open Omawrite", "omawrite")
 o.bind(appBind .. " + R", "Open Foliate", "foliate")
+o.bind(appBind .. " + I", "Open Btop", "btop")
 
 
 -- manage windows
@@ -74,6 +76,7 @@ if hl.plugin and hl.plugin.scrolloverview then
       hl.bind(appBind .. " + F", hl.dsp.exec_cmd("nautilus"))
       hl.bind(appBind .. " + R", hl.dsp.exec_cmd("foliate"))
       hl.bind(wmBind .. " + Z", hl.dsp.exec_cmd("hyprctl reload"))
+      hl.bind(appBind .. " + I", hl.dsp.exec_cmd("btop"))
 
       hl.bind("X", hl.dsp.window.close())
 
