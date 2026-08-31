@@ -10,7 +10,7 @@ hl.config({
   decoration = {
     rounding = 0,
     active_opacity = 1,
-    inactive_opacity = 0.7,
+    inactive_opacity = 0.93,
 
     blur = {
       enabled = false,
@@ -29,19 +29,4 @@ hl.config({
     focus_fit_method = 0,
     follow_focus = true
   },
-
-  plugin = {
-    scrolloverview = {
-      scale = 0.6,
-      gesture_distance = 300,
-      workspace_gap = 27,
-      layout = "vertical",
-      wallpaper = 0,
-
-      shadow = {
-          enabled = true,
-        range = 10
-      }
-    }
-  }
 })
