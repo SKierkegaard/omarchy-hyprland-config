@@ -16,6 +16,7 @@ hl.unbind(appMod .. " + W")
 hl.unbind(appMod .. " + Y")
 hl.unbind(appMod .. " + R")
 hl.unbind(appMod .. " + I")
+hl.unbind(appMod .. " + S")
 
 o.bind(appMod .. " + B", "Open browser", browser)
 o.bind("SUPER + RETURN", "Open terminal", terminal)
@@ -24,7 +25,7 @@ o.bind(appMod .. " + D", "Open Discord", "discord-canary")
 o.bind(appMod .. " + F", "Open file manager", "nautilus")
 o.bind(appMod .. " + W", "Open Omawrite", "omawrite")
 o.bind(appMod .. " + R", "Open Foliate", "flatpak run com.github.johnfactotum.Foliate")
-o.bind(appMod .. " + I", "Open Btop", "btop")
+o.bind(appMod .. " + S", "Open Local Send", "flatpak run org.localsend.localsend_app")
 
 
 -- manage windows
@@ -40,6 +41,7 @@ hl.unbind("SUPER + L")
 hl.unbind("SUPER + SHIFT + H")
 hl.unbind("SUPER + SHIFT + L")
 hl.unbind(windowMod .. " + Z")
+hl.unbind("SUPER + SLASH")
 
 o.bind(windowMod .. " + F", "Toggle fullscreen", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }))
 o.bind(windowMod .. " + X", "Close window", hl.dsp.window.close())

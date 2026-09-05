@@ -10,7 +10,7 @@ hl.config({
   decoration = {
     rounding = 0,
     active_opacity = 1,
-    inactive_opacity = 0.93,
+    inactive_opacity = 0.95,
 
     blur = {
       enabled = false,
@@ -28,5 +28,9 @@ hl.config({
     column_width = 1,
     focus_fit_method = 0,
     follow_focus = true
+  },
+
+  input = {
+    follow_mouse = 0,
   },
 })
