@@ -11,7 +11,6 @@ o.bind("SUPER + RETURN", "Terminal", terminal)
 o.bind(appMod .. " + M", "Pear Desktop", "pear-desktop")
 o.bind(appMod .. " + D", "Discord", "discord-canary")
 o.bind(appMod .. " + F", "File manager", "nautilus")
-o.bind(appMod .. " + W", "Omawrite", "omawrite")
 o.bind(appMod .. " + R", "Foliate", "flatpak run com.github.johnfactotum.Foliate")
 o.bind(appMod .. " + S", "Local Send", "flatpak run org.localsend.localsend_app")
 
