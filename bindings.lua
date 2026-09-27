@@ -1,6 +1,7 @@
 -- app variables
 local browser = "brave-origin"
 local terminal = "ghostty"
+local fileManager = "flea"
 
 
 -- app bindings
@@ -10,7 +11,7 @@ o.bind(appMod .. " + B", "Browser", browser)
 o.bind("SUPER + RETURN", "Terminal", terminal)
 o.bind(appMod .. " + M", "Pear Desktop", "pear-desktop")
 o.bind(appMod .. " + D", "Discord", "discord-canary")
-o.bind(appMod .. " + F", "File manager", "nautilus")
+o.bind(appMod .. " + F", "File manager", fileManager)
 o.bind(appMod .. " + R", "Foliate", "flatpak run com.github.johnfactotum.Foliate")
 o.bind(appMod .. " + S", "Local Send", "flatpak run org.localsend.localsend_app")
 
@@ -151,3 +152,4 @@ end
 o.bind("SUPER + C", "Universal copy", universal_clipboard_shortcut("CTRL", "C", "CTRL", "Insert"))
 o.bind("SUPER + V", "Universal paste", universal_clipboard_shortcut("CTRL", "V", "SHIFT", "Insert"))
 o.bind("SUPER + X", "Universal cut", universal_clipboard_shortcut("CTRL", "X"))
+o.bind("SUPER + CTRL + V", "Clipboard Manager", "omarchy-shell shell toggle omarchy.clipboard")

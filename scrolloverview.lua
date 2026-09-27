@@ -1,5 +1,6 @@
 local browser = "brave-origin"
 local terminal = "ghostty"
+local fileManager = "flea"
 local appMod = "SUPER + SHIFT"
 local windowMod = "SUPER + CTRL"
 
@@ -124,7 +125,7 @@ hl.define_submap("scrolloverview", function ()
   hl.bind(appMod .. " + B", hl.dsp.exec_cmd(browser))
   hl.bind(appMod .. " + M", hl.dsp.exec_cmd("pear-desktop"))
   hl.bind(appMod .. " + D", hl.dsp.exec_cmd("discord-canary"))
-  hl.bind(appMod .. " + F", hl.dsp.exec_cmd("nautilus"))
+  hl.bind(appMod .. " + F", hl.dsp.exec_cmd(fileManager))
   hl.bind(appMod .. " + R", hl.dsp.exec_cmd("flatpak run com.github.johnfactotum.Foliate"))
   hl.bind(appMod .. " + S", hl.dsp.exec_cmd("flatpak run org.localsend.localsend_app"))
 
