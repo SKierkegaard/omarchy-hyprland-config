@@ -1,4 +1,4 @@
-local browser = "brave-origin"
+local browser = "zen-browser"
 local terminal = "ghostty"
 local fileManager = "flea"
 local appMod = "SUPER + SHIFT"
@@ -9,13 +9,13 @@ hl.config({
     scrolloverview = {
       scale = 0.53,
       gesture_distance = 300,
-      workspace_gap = 35,
+      workspace_gap = 0,
       layout = "vertical",
       wallpaper = 0,
 
       shadow = {
         enabled = true,
-        range = 12
+        range = 9
       }
     }
   }

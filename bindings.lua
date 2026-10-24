@@ -1,5 +1,5 @@
 -- app variables
-local browser = "brave-origin"
+local browser = "zen-browser"
 local terminal = "ghostty"
 local fileManager = "flea"
 
@@ -153,3 +153,10 @@ o.bind("SUPER + C", "Universal copy", universal_clipboard_shortcut("CTRL", "C", 
 o.bind("SUPER + V", "Universal paste", universal_clipboard_shortcut("CTRL", "V", "SHIFT", "Insert"))
 o.bind("SUPER + X", "Universal cut", universal_clipboard_shortcut("CTRL", "X"))
 o.bind("SUPER + CTRL + V", "Clipboard Manager", "omarchy-shell shell toggle omarchy.clipboard")
+
+-- flea --default: begin. Written by `flea --default`; `flea --default off` removes the block whole.
+hl.unbind("SUPER + SHIFT + F")
+o.bind("SUPER + SHIFT + F", "File manager", { launch = 'flea --gui' })
+hl.unbind("SUPER + ALT + SHIFT + F")
+o.bind("SUPER + ALT + SHIFT + F", "File manager (cwd)", { launch = 'flea --gui "$(omarchy-cmd-terminal-cwd)"' })
+-- flea --default: end.
