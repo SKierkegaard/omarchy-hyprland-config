@@ -1,8 +1,4 @@
-local browser = "zen-browser"
-local terminal = "ghostty"
-local fileManager = "flea"
-local appMod = "SUPER + SHIFT"
-local windowMod = "SUPER + CTRL"
+local v = require("variables")
 
 hl.config({
   plugin = {
@@ -121,15 +117,15 @@ hl.define_submap("scrolloverview", function ()
   hl.bind("SHIFT + RIGHT", hl.dsp.window.swap({ direction = "right" }))
   hl.bind("SHIFT + LEFT", hl.dsp.window.swap({ direction = "left" }))
 
-  hl.bind("SUPER + RETURN", hl.dsp.exec_cmd(terminal))
-  hl.bind(appMod .. " + B", hl.dsp.exec_cmd(browser))
-  hl.bind(appMod .. " + M", hl.dsp.exec_cmd("pear-desktop"))
-  hl.bind(appMod .. " + D", hl.dsp.exec_cmd("discord-canary"))
-  hl.bind(appMod .. " + F", hl.dsp.exec_cmd(fileManager))
-  hl.bind(appMod .. " + R", hl.dsp.exec_cmd("flatpak run com.github.johnfactotum.Foliate"))
-  hl.bind(appMod .. " + S", hl.dsp.exec_cmd("flatpak run org.localsend.localsend_app"))
+  hl.bind("SUPER + RETURN", hl.dsp.exec_cmd(v.terminal))
+  hl.bind(v.appMod .. " + B", hl.dsp.exec_cmd(v.browser))
+  hl.bind(v.appMod .. " + M", hl.dsp.exec_cmd("pear-desktop"))
+  hl.bind(v.appMod .. " + D", hl.dsp.exec_cmd("discord-canary"))
+  hl.bind(v.appMod .. " + F", hl.dsp.exec_cmd(v.fileManager))
+  hl.bind(v.appMod .. " + R", hl.dsp.exec_cmd("flatpak run com.github.johnfactotum.Foliate"))
+  hl.bind(v.appMod .. " + S", hl.dsp.exec_cmd("flatpak run org.localsend.localsend_app"))
 
-  hl.bind(windowMod .. " + Z", hl.dsp.exec_cmd("hyprctl reload"))
+  hl.bind(v.winMod .. " + Z", hl.dsp.exec_cmd("hyprctl reload"))
   lastWorkspaceScrollBind = hl.bind("j", create_workspace_at_end)
   lastWorkspaceScrollBind:set_enabled(false)
   hl.on("workspace.active", update_last_workspace_scroll_bind)
